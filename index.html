@@ -2,9 +2,13 @@
 <html lang="nl">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="theme-color" content="#19A519" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>module 1 eindopdracht</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://js.cx/libs/animate.js"></script>
     <script src="main.js"></script>
+    <link rel="manifest" href="manifest.webmanifest" />
   </head>
   <body>
     <header>
@@ -13,34 +17,47 @@
           <h1>Stijn</h1>
         </div>
         <div class="middel_balk">
-          <a href="default.asp"
-            ><img
-              src="https://www.w3schools.com/images/w3schools_green.jpg"
-              alt="https://www.w3schools.com/default.asp"
-            />
-          </a>
-          <p>
-            <strong
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong
-            >
-            Praesentium, in minus placeat est nulla eaque facere, quibusdam sit
-            tempore omnis harum beatae id delectus non. Impedit earum libero
-            nemo recusandae.
-          </p>
-          <ul>
-            <li>sport</li>
-            <li>netflix</li>
-            <li>games</li>
-          </ul>
+          <img
+            src="een foto van Stijn.png"
+            alt="foto van Stijn"
+            class="spinhov"
+          />
+          <label for="textarea"></label>
+          <textarea id="textExample" rows="5" cols="60">
+            Hallo ik ben Stijn Septer.
+            Ik vind het leuk om te sporten.
+            Ook kijk naar Netflix en youtube.
+          </textarea>
+          <button onclick="animateText(textExample)">kijk naar dit</button>
         </div>
         <div class="bottom_balk"></div>
       </div>
     </header>
     <footer>
       <h2>over mij</h2>
-      <ul>
-        <li>hello</li>
-      </ul>
+      <p>
+        <font color="#FF2626">:hockey<br /></font>
+        <font color="#1203422">:tennis<br /></font>
+        <font color="#FF593A">:netflix<br /></font>
+        <font color="#FFD523">:games<br /></font>
+        <font color="#ffff00"
+          ><a href="http://127.0.0.1:5500/index.html" target="_blank">
+            github</a
+          ></font
+        >
+      </p>
+      <div id="container">
+        <div id="animate"></div>
+        <button1 onclick="myMove()" class="button button1">click here</button1>
+        <div id="experimantal"></div>
+      </div>
+      <svg
+      version="1.1"
+      baseProfile="full"
+      width="100"
+      height="100"
+      viewBox="0 0 100 100"
+    </svg>
     </footer>
   </body>
 </html>
